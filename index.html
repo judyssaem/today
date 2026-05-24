@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🌱 새싹 10 모으기</title>
+<title>🌱 도란도란 10 모으기</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
@@ -78,8 +78,7 @@
     text-shadow: 2px 2px 0 #fff, 3px 3px 0 var(--leaf-mid);
     letter-spacing: 1px;
   }
-  header h1 .sprout { display:inline-block; animation: bob 2.4s ease-in-out infinite; }
-  @keyframes bob { 0%,100%{transform:translateY(0) rotate(-4deg);} 50%{transform:translateY(-6px) rotate(4deg);} }
+  header h1 .sprout { display:inline-block; }
   header p {
     margin: 2px 0 0;
     color: var(--soil-brown);
@@ -120,7 +119,8 @@
     margin: 0 0 8px;
     font-size: 18px;
     color: var(--leaf-deep);
-    display: flex; align-items: center; gap: 6px;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    text-align: center;
   }
 
   /* ===== 카테고리 탭 ===== */
@@ -207,10 +207,10 @@
     cursor: pointer;
   }
   .cell.filled {
-    background: var(--sun-yellow);
+    background: var(--cream-deep);
     border-style: solid;
     border-color: var(--leaf-deep);
-    box-shadow: inset 0 -4px 0 rgba(0,0,0,0.06);
+    box-shadow: inset 0 -4px 0 rgba(0,0,0,0.04);
   }
   .cell.snap-target {
     background: var(--berry-pink) !important;
@@ -299,11 +299,6 @@
     background: var(--cream-deep);
     border-radius: 16px;
     padding: 10px;
-  }
-  /* 우측 패널 안의 h2(숫자로 표현해요)는 가운데 정렬 */
-  .panel.right h2 {
-    justify-content: center;
-    text-align: center;
   }
   .num-card {
     aspect-ratio: 1 / 1;
@@ -530,7 +525,7 @@
 </div>
 
 <header>
-  <h1><span class="sprout">🌱</span> 새싹 10 모으기</h1>
+  <h1><span class="sprout">🌱</span> 도란도란 10 모으기</h1>
   <p>나만의 이야기로 10을 모아보세요! </p>
 </header>
 
@@ -542,7 +537,7 @@
     <div class="palette" id="palette"></div>
 
     <div class="ten-frame-wrap">
-      <h2 style="justify-content:center; display:flex; margin-bottom:10px;">📦 10 배열판</h2>
+      <h2 style="margin-bottom:10px;">10 배열판</h2>
       <div class="ten-frame" id="tenFrame"></div>
     </div>
 
@@ -610,7 +605,7 @@
 
 <script>
 /* ===========================================================
-   🌱 새싹 10 모으기 - 메인 스크립트
+   🌱 도란도란 10 모으기 - 메인 스크립트
    =========================================================== */
 
 /* ---------- 데이터: 카테고리별 이모지 (각 6개) ---------- */
